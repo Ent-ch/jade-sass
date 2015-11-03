@@ -1,6 +1,7 @@
 /*global require, module, console */
-module.exports = {
-  log: function(string) {
-    if (console) console.log(string);
-  }
-};
+module.exports = function() {
+    'use strict';
+    if (console) {
+        console.log('We used Browserfy and Gulp to generate this');
+    }
+ };
